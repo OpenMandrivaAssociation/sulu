@@ -11,7 +11,6 @@ Group:		Sound
 URL:		http://www.cs.toronto.edu/~kal/sulu
 Source:		http://www.cs.toronto.edu/~kal/sulu/%{name}-%{version}.tar.bz2
 BuildRequires:	gtk-devel libusb-devel popt-devel
-BuildRoot:	%{_tmppath}/%{name}-%{version}
 
 %description
 Sulu is a GTK interface for transferring mp3's between your Samsung Uproar 
