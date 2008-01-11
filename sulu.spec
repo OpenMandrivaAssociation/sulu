@@ -27,17 +27,6 @@ make CFLAGS="$RPM_OPT_FLAGS" CPPFLAGS="$RPM_OPT_FLAGS"
 mkdir -p $RPM_BUILD_ROOT/%_bindir
 cp %name $RPM_BUILD_ROOT/%_bindir
 
-mkdir -p %{buildroot}%_menudir
-cat << EOF > %{buildroot}%_menudir/%name
-?package(sulu): \
-  needs=x11 \
-  section=Multimedia/Sound \
-  title=Sulu \
-  longtitle="GUI for Samsung Uproar and Yepp" \
-  icon=sound_section.png \
-  command=sulu \
-  xdg="true"
-EOF
 
 mkdir -p $RPM_BUILD_ROOT%{_datadir}/applications
 cat > $RPM_BUILD_ROOT%{_datadir}/applications/mandriva-%{name}.desktop << EOF
@@ -64,6 +53,5 @@ rm -rf %{buildroot}
 %defattr(-,root,root)
 %doc changelog COPYING README todo
 %_bindir/%name
-%_menudir/%name
 %{_datadir}/applications/mandriva-%{name}.desktop
 
