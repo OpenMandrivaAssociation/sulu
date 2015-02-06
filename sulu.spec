@@ -1,6 +1,6 @@
 %define name sulu
 %define version 0.17
-%define release %mkrel 6
+%define release 7
 
 Name:		%{name}
 Summary:	Interface for Samsung Uproar and Yepp
