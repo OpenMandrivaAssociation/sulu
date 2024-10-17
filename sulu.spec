@@ -8,7 +8,7 @@ Version:	%{version}
 Release:	%{release}
 License:	GPL
 Group:		Sound
-URL:		http://www.cs.toronto.edu/~kal/sulu
+URL:		https://www.cs.toronto.edu/~kal/sulu
 Source:		http://www.cs.toronto.edu/~kal/sulu/%{name}-%{version}.tar.bz2
 BuildRequires:	gtk-devel libusb-devel popt-devel
 BuildRoot:	%{_tmppath}/%{name}-%{version}
